@@ -13,9 +13,10 @@
 - [ストーリーマッピング](https://miro.com/app/board/uXjVMAJL7hI=/)
 
 ## セットアップ
-パッケージ管理ツールとして poetry を使用しています。 <br>
-poetry 環境を構成する方法は [こちらの Poetry をインストールする](https://pleiades.io/help/pycharm/poetry.html#748fc371) に沿って 構築してください。 <br>
-また、Python 3.7 以上が必要になります。
+Python 3.7 以上が必要になります。<br>
+また、パッケージ管理ツールとして poetry を使用しています。 <br>
+poetry の導入は [こちらの Poetry をインストールする](https://pleiades.io/help/pycharm/poetry.html#748fc371) に沿って構築してください。 <br>
+※ poetry.lockは gitの管理対象です。
 
 ### はじめてのひと
 1. 本リポジトリをクローンする
