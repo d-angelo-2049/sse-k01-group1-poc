@@ -21,7 +21,7 @@ poetry の導入は [こちらの Poetry をインストールする](https://pl
 ### はじめてのひと
 1. 本リポジトリをクローンする
 ```commandline
-$ git clone git@github.com:d-angelo-2049/simple-ccm-study.git
+$ git clone git@github.com:d-angelo-2049/sse-k01-group1-poc.git
 ```
 2. 依存関係を インストール する
 ```commandline
