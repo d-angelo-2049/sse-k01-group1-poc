@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "sse-k01-group1-poc"
+version = "0.1.0"
+description = ""
+authors = ["d'angelo <guy1nthecha1r2049@gmail.com>"]
+readme = "README.md"
+packages = [{include = "sse_k01_group1_poc"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+google-api-python-client = "^2.13.0"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.4.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
