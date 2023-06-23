@@ -5,10 +5,11 @@ from googleapiclient.discovery import build
 
 # google calendar event fetcher for poc
 def google_calendar_fetcher():
+    api_version = 'v3'
+    calendar_id = 'ssek01group1kusakaripoc@gmail.com'
     # read api key
     config = configparser.ConfigParser()
     config.read('credentials.ini')
-    calendar_id = config.get('credentials', 'calendar_id')
     api_key = config.get('credentials', 'google_api_key')
 
     # get events 2 weeks ahead in JST
@@ -17,7 +18,6 @@ def google_calendar_fetcher():
     event_end = (datetime.now(JST) + timedelta(weeks=2)).isoformat()
 
     # event fetch
-    api_version = 'v3'
     service = build('calendar', api_version, developerKey=api_key)
     events = service.events().list(
         calendarId=calendar_id,
