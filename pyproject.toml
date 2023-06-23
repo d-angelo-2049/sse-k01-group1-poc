@@ -2,7 +2,7 @@
 name = "sse-k01-group1-poc"
 version = "0.1.0"
 description = ""
-authors = ["d'angelo <guy1nthecha1r2049@gmail.com>"]
+authors = ["d'angelo"]
 readme = "README.md"
 packages = [{include = "sse_k01_group1_poc"}]
 
