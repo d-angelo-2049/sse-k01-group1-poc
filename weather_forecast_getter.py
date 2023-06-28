@@ -36,31 +36,8 @@ for weather in forecast.forecast:
     weather_data.append(data)
 
 # JSONファイルに保存
-with open('weather_forecast.json', 'w') as file:
+with open('weather.json', 'w') as file:
     json.dump(weather_data, file)
 
 print("5日後までの天気データをweather.jsonに保存しました。")
 
-
-
-"""
-# 現在の気象データを取得
-observation = mgr.weather_at_place(location)
-wo = observation.weather
-
-wo = observation.weather
-print("気象データの計測日次時間(unixTime): {}".format(wo.ref_time))
-print("気象データの計測日次時間(date): {}".format(formatting.to_date(wo.ref_time)))
-print("天気コード: {}".format(wo.weather_code))
-print("天気: {}".format(wo.status))
-print("天気詳細: {}".format(wo.detailed_status))
-print("気温(K): {}".format(wo.temperature()))
-print("気温(℃): {}".format(wo.temperature("celsius")))
-print("湿度(%): {}".format(wo.humidity))
-print("気圧(hPa): {}".format(wo.barometric_pressure()))
-print("風: {}".format(wo.wind()))
-
-print("雲量: {}".format(wo.clouds))
-print("雨量: {}".format(wo.rain))
-print("積雪量: {}".format(wo.snow))
-"""
