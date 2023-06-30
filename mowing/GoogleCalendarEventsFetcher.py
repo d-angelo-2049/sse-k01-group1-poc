@@ -18,7 +18,7 @@ class GoogleCalendarEventsFetcher(EventsFetcher):
 
         # get events 2 weeks ahead in JST
         event_start = datetime.now(self.JST).isoformat()
-        event_end = (datetime.now(self.JST) + timedelta(weeks=2)).isoformat()
+        event_end = (datetime.now(self.JST) + timedelta(days=5)).isoformat()
 
         # event fetch
         api_version = 'v3'
