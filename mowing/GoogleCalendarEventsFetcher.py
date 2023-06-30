@@ -33,7 +33,7 @@ class GoogleCalendarEventsFetcher(EventsFetcher):
 
         result = []
         if not events:
-            print('2週間以内のイベントは見つかりませんでした。')
+            print('No events within 2 weeks were found.')
             return result
         else:
             for event in events:

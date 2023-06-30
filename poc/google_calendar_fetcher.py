@@ -7,7 +7,7 @@ from googleapiclient.discovery import build
 def google_calendar_fetcher():
     # read api key
     config = configparser.ConfigParser()
-    config.read('credentials.ini')
+    config.read('../credentials.ini')
     calendar_id = config.get('credentials', 'calendar_id')
     api_key = config.get('credentials', 'google_api_key')
 

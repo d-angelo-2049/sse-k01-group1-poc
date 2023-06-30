@@ -6,7 +6,7 @@ from pyowm.utils.config import get_default_config
 def weather_api_getter():
     # read api key
     config = configparser.ConfigParser()
-    config.read('credentials.ini')
+    config.read('../credentials.ini')
     key = config.get('credentials', 'weather_api_key')
     return key
 
@@ -36,7 +36,7 @@ for weather in forecast.forecast:
     weather_data.append(data)
 
 # JSONファイルに保存
-with open('weather.json', 'w') as file:
+with open('../weather.json', 'w') as file:
     json.dump(weather_data, file)
 
 print("5日後までの天気データをweather.jsonに保存しました。")
